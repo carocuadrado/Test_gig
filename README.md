@@ -14,7 +14,7 @@ Special requirement if you want to run Selenium or Remote Selenium as a webdrive
 * Java (think 8) & added to path
 
 ## Installation
-
+* Create a folder Projects (C:\Projects\test_gig)
 * git clone 
 * cd test_gig
 * npm install (in source directory)
@@ -23,7 +23,10 @@ Special requirement if you want to run Selenium or Remote Selenium as a webdrive
    npm install protractor -g 
 
 ## Running the tests
-
+ According with package.json the configuration of webdriver-update is :
+ "webdriver-update": "webdriver-manager update --versions.chrome=79.0.3945.36 --gecko false --proxy http://10.45.253.23:8887 --ignore_ssl"
+  -Change the configuration of proxy or removed
+  
 1. Execute:
  npm run webdriver-update
 2. Execute: 
