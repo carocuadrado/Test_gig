@@ -1,0 +1,2189 @@
+[
+  {
+    "description": "This feature considers the following behaviour\n\n-Testing that the Shopping Cart tracks items correctly",
+    "keyword": "Feature",
+    "name": "Shopping cart",
+    "line": 2,
+    "id": "shopping-cart",
+    "tags": [
+      {
+        "name": "@test",
+        "line": 1
+      }
+    ],
+    "uri": "gig_test\\features\\directory\\fp.Shopping.feature",
+    "elements": [
+      {
+        "id": "shopping-cart;\"users-should-be-able-to-enter-into-homepage\"",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "\"Users should be able to enter into homepage\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am in homepage",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "title contains \"My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "it should display one search box",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping-cart;\"user-can-be-able-to-search-black-dress-product\"",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "\"User can be able to search black dress product\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am in homepage",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I search one \"black dress\"",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:143"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "it should display results",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2239000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping-cart;\"user-adds-the-first-dress,-continues-shopping,adds-the-second-dress-and-goes-on-proceed-to-checkout\"",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "\"User adds the first dress, continues shopping,adds the second dress and goes on Proceed to checkout\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I am in Search section",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I add to cart the first dress",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "it should display one alert with \"1\" items",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I continue shopping",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1432000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "it should appear Search page \"Search - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I am in Search section",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I add to cart the second dress",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "it should display one alert with \"2\" items",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I click on Proceed to checkout",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3092000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "it should appear Order page \"Order - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping-cart;\"user-change-the-quantity-to-2-of-the-second-dress\"",
+        "keyword": "Scenario",
+        "line": 63,
+        "name": "\"User change the quantity to 2 of the second dress\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "I am in shopping-cart summary section",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "I change of quantity of second dress to 2",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "the value in qty should be 2",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1089000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping-cart;\"user-removes-the-first-dress-on-summary-section\"",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "\"User removes the first dress on summary section\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 70,
+            "name": "I am in shopping-cart summary section",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "I remove of first dress",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "the product should disappear",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:132"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2201000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping-cart;\"user-goes-back-to-login-page-after-click-in-proceed-to-checkout\"",
+        "keyword": "Scenario",
+        "line": 94,
+        "name": "\"User goes back to Login page after click in Proceed to checkout\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 87,
+            "name": "I am in shopping-cart summary section",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 88,
+            "name": "I Proceed to checkout",
+            "match": {
+              "location": "gig_test\\steps\\Shopping.steps.ts:151"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 89,
+            "name": "it should appear authentication page \"Login - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "This feature considers the following behaviour\n\n-Testing the Sign-in feature ",
+    "keyword": "Feature",
+    "name": "Sign-in",
+    "line": 2,
+    "id": "sign-in",
+    "tags": [
+      {
+        "name": "@test",
+        "line": 1
+      }
+    ],
+    "uri": "gig_test\\features\\directory\\fp.Store.feature",
+    "elements": [
+      {
+        "id": "sign-in;\"users-should-be-able-to-enter-in-login-page\"",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "\"Users should be able to enter in Login page\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am in homepage",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "title contains \"My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I mark the Sign in section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:224"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "it should appear authentication page \"Login - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "it should display the panel to registered and create account",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"address-is-required-to-sign-in\"",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "\"Address is required to sign in\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "it should appear an error \"An email address required\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1645000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-an-alert-when-the-address-\"1\"-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "\"It shows an alert when the address \"1\" is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"1\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 438000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Invalid email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-an-alert-when-the-address-\"ae@\"-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "\"It shows an alert when the address \"ae@\" is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"ae@\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Invalid email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1452000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-an-alert-when-the-address-\"ae@.com\"-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "\"It shows an alert when the address \"ae@.com\" is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"ae@.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Invalid email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1894000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-an-alert-when-the-address-\"ae@gmail\"-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "\"It shows an alert when the address \"ae@gmail\" is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"ae@gmail\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Invalid email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2774000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-an-alert-when-the-address-\"ae@.\"-\"-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "\"It shows an alert when the address \"ae@.\" \" is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"ae@.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 494000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Invalid email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2484000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"\"it-shows-an-alert-when-the-address-is-correct-but-the-password-is-required",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "\"\"It shows an alert when the address is correct but the password is required",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I input one \"carocuadradoj@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "it should appear an error \"Password is required.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4115000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-one-alert-when-the-password-is-invalid\"",
+        "keyword": "Scenario",
+        "line": 63,
+        "name": "\"It shows one alert when the password is invalid\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "I input one \"carocuadradoj@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 579000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I input the \"123\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "it should appear an error \"Invalid password.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1720000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"it-shows-one-alert-of-authentication-failed-when-address-is-not-according-with-password\"",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "\"It shows one alert of Authentication failed when address is not according with password\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "I input one \"carocuadradoj@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I input the \"5841CDh2855\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "it should appear an error \"Authentication failed.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1760000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"users-have-the-possibility-to-link-about-forgot-the-password\"",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "\"Users have the possibility to link about Forgot the password\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 72,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "I input one \"carocuadradoj@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 505000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "there is a link to forgot password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:160"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "I enter in Forgot password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:191"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "it should appear Forgot password page \"Forgot your password - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1935000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "there are textbox for email address and button Retrieve password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"validation-of-address-to-recovering-password\"",
+        "keyword": "Scenario",
+        "line": 94,
+        "name": "\"Validation of address to recovering password\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 87,
+            "name": "I am in Forgot password section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:217"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "I input one \"ae@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "I click on Retrieve password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:197"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1392000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "it should appear an error \"There is no account registered for this email address.\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"validation-of-address-valid-to-recover-a-password\"",
+        "keyword": "Scenario",
+        "line": 95,
+        "name": "\"Validation of address valid to recover a password\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 87,
+            "name": "I am in Forgot password section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:217"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "I input one \"e\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 89,
+            "name": "I click on Retrieve password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:197"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 90,
+            "name": "it should appear an error \"Invalid email address\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"recovering-password-successfully\"",
+        "keyword": "Scenario",
+        "line": 110,
+        "name": "\"Recovering password successfully\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 102,
+            "name": "I am in Forgot password section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:217"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "I input one \"carocuadrado@hotmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 463000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 104,
+            "name": "I click on Retrieve password",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:197"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1610000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 105,
+            "name": "it should appear an alert \"A confirmation email has been sent to your address:\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 106,
+            "name": "I back to login",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:138"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1896000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "it should appear authentication page \"Login - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-in;\"users-should-be-able-to-login-successfully\"",
+        "keyword": "Scenario",
+        "line": 124,
+        "name": "\"Users should be able to login successfully\"",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 117,
+            "name": "I am in Authentication section",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 118,
+            "name": "I input one \"carocuadradoj@gmail.com\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 119,
+            "name": "I input the \"5841CDj2933\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 120,
+            "name": "I mark the Sign in",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:229"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 121,
+            "name": "it should appear my account page \"My account - My Store\"",
+            "match": {
+              "location": "gig_test\\steps\\Store.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2051000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:18"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

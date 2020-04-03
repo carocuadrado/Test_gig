@@ -1,0 +1,7 @@
+node_modules/
+typescript/
+.vscode/
+reports/
+npm-ls.txt 
+.vs/slnx.sqlite
+metadata.*

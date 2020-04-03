@@ -1,0 +1,55 @@
+{
+  "name": "flow-planner-ui-test",
+  "version": "1.0.0",
+  "description": "Flow Planner  - Business driven automatic UI Testing",
+  "repository": "https://bitbucket.org/maersk-analytics/dn_core_ui_test_shared",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf typescript/",
+    "clean-build": "npm run clean && npm run build",
+    "pretest": "tsc",
+    "test": "protractor typescript/config/config.js",
+    "build-test": "npm run build && npm run test",
+    "report-to-trx": "bin\\msxsl.exe reports\\junit\\cucumber_report.xml xslt_Junit_MsUnit.xslt -o reports\\trx\\cucumber_results.trx",
+    "webdriver-update": "webdriver-manager update --versions.chrome=79.0.3945.36 --gecko false --proxy http://10.45.253.23:8887 --ignore_ssl",
+    "webdriver-start": "webdriver-manager start  --proxy http://10.45.253.23:8887 --ignore_ssl",
+    "webdriver-start-detach": "webdriver-manager start  --detach --seleniumPort=4444 --proxy http://10.45.253.23:8887 --ignore_ssl",
+    "webdriver-shutdown": "webdriver-manager shutdown --seleniumPort=4444",
+    "inspect": "node --inspect-brk node_modules\\protractor\\bin\\protractor typescript/config/config.js",
+    "exec-test": "npm run webdriver-start-detach && npm run test && npm run webdriver-shutdown",
+    "no-browser-test": "cucumber-js features/framework/test-stats.feature --require-module ts-node/register --require steps/framework.steps.ts"
+  },
+  "author": "Carolina Cuadrado",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/cucumber": "4.0.5",
+    "@types/node": "^12.0.7",
+    "@types/selenium-webdriver": "^4.0.0",
+    "authenticator-browser-extension": "^1.1.1",
+    "chai": "^4.2.0",
+    "cucumber": "5.1.0",
+    "cucumber-html-reporter": "5.0.0",
+    "cucumber-junit": "1.7.1",
+    "mkdirp": "^0.5.1",
+    "protractor": "^5.4.2",
+    "protractor-console": "^3.0.0",
+    "protractor-cucumber-framework": "6.1.2",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.2.0",
+    "typescript": "3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "codelyzer": "5.1.0",
+    "npm": "6.9.0",
+    "tslint": "5.17.0",
+    "tslint-loader": "3.5.3",
+    "webdriver-manager": "^12.1.7"
+  },
+  "keywords": [
+    "BDD",
+    "UAT",
+    "Automated UI testing"
+  ]
+}

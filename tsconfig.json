@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": false,
+        "removeComments": false,
+        "noImplicitAny": false,
+        "outDir": "typescript",
+        "typeRoots": [ "./node_modules/@types" ],
+        "types": ["node","cucumber"],
+        "lib": [
+            "dom",
+            "es2015",
+            "es5",
+            "es6",
+            "es7"
+          ]
+    },
+    "exclude": [
+        "node_modules",
+        "typescript"
+    ]
+}
