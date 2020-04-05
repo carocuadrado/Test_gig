@@ -7,7 +7,6 @@
 
 * Node.js (At least v10.6.0)
 * Chrome browser 
-* webdriver (npm -g install) 
 
 Special requirement if you want to run Selenium or Remote Selenium as a webdriver.
 
@@ -15,17 +14,20 @@ Special requirement if you want to run Selenium or Remote Selenium as a webdrive
 
 ## Installation
 * Create a folder Projects (C:\Projects\test_gig)
-* git clone 
-* cd test_gig
+* git clone or download project 
+* Insert all files in the test_gig folder created previousy 
+*cd test_gig
 * npm install (in source directory)
-#Some people need this
-​
-   npm install protractor -g 
+*npm install protractor -g 
 
 ## Running the tests
- According with package.json the configuration of webdriver-update is :
+
+ According with package.json file  the configuration of webdriver-update is :
+ "webdriver-update": "webdriver-manager update --versions.chrome=79.0.3945.36 --gecko false --ignore_ssl"
+ 
+- If it needs to use one proxy it should change the instruction (see example)
  "webdriver-update": "webdriver-manager update --versions.chrome=79.0.3945.36 --gecko false --proxy http://10.45.253.23:8887 --ignore_ssl"
-  -Change the configuration of proxy or removed
+ 
   
 1. Execute:
  npm run webdriver-update
